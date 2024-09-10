@@ -1,0 +1,20 @@
+
+{
+    "region" : "ap-south-1",
+    "configuration" : "Debug",
+    "framework"     : "net6.0",
+    "self-contained" : false,
+    "application"    : "CCITwebsite",
+    "environment"    : "CCITwebsite-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-09d4296b47e68c19d\";\"aws:ec2:vpc,Subnets\"=\"subnet-03d535510f32cdf2a\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.8.1 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "ccitwebsite-dev",
+    "instance-type"        : "t3a.medium",
+    "key-pair"             : "ccit-kp-volumes",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}
